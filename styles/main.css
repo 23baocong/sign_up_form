@@ -17,6 +17,9 @@ body {
     background: #A7D7C5;
 }
 
+.container {
+    text-align: center;
+}
 .rec-top {
     position: fixed;
     top: 0;
@@ -39,7 +42,8 @@ section {
 
     background: #F6FBF9;
     border-radius: 3.2rem;
-    margin: 10% 20%;
+    margin: 7.2rem auto;
+    max-width: 44.5rem;
 }
 
 h1 {
@@ -51,8 +55,7 @@ h1 {
 
     color: #212B27;
 
-    margin-top: 4.4rem;
-    padding: 0 7rem;
+    margin: 4.4rem auto 0;
 }
 
 .description {
