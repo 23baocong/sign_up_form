@@ -14,44 +14,32 @@ html {
 body {
     height: 100%;
     width: 100%;
-}
-
-.container {
-    max-width: 80rem;
-    height: 60rem;
-
-    position: relative;
-
-    margin: 20% auto;
-    background-color: #A7D7C5;
-    z-index: -2;
+    background: #A7D7C5;
 }
 
 .rec-top {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
 }
 
 .rec-bot {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
 
 section {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 
     background: #F6FBF9;
     border-radius: 3.2rem;
-    text-align: center;
-
-    width: 44.5rem;
-    height: 44.5rem;
-
-    margin: 7.25rem 17.25rem;
+    margin: 10% 20%;
 }
 
 h1 {
@@ -62,8 +50,9 @@ h1 {
     line-height: 4.7rem;
 
     color: #212B27;
-    
+
     margin-top: 4.4rem;
+    padding: 0 7rem;
 }
 
 .description {
@@ -75,29 +64,26 @@ h1 {
 
     color: #32403B;
 
-    margin: 0.4rem 7.35rem 3.2rem;
+    margin-top: 0.4rem;
+    padding: 0 7.3rem;
 }
 
 .email {
-    display: block;
-    margin: 0 4.1rem 1.5rem 3.9rem;
-
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 
-    width: 37.5rem;
-    height: 5.5rem;
+    display: inline-block;
+    margin-top: 3.2rem;
+    padding: 1.6rem 25% 1.9rem 2.2rem;
 }
 
 .pass {
-    display: block;
-    margin: 0 4.1rem 2.1rem 3.9rem;
-
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 
-    width: 37.5rem;
-    height: 5.5rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.6rem 25% 1.9rem 2.2rem;
 }
 
 .email::placeholder {
@@ -108,9 +94,6 @@ h1 {
     line-height: 1.9rem;
 
     color: rgba(0, 0, 0, 0.5);
-
-    padding-top: 1.6rem;
-    padding-left: 2.2rem;
 }
 
 .pass::placeholder {
@@ -121,24 +104,12 @@ h1 {
     line-height: 1.9rem;
 
     color: rgba(0, 0, 0, 0.5);
-
-    padding-top: 1.6rem;
-    padding-left: 2.2rem;
-}
-
-.create-acc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .create-btn {
     border: none;
     background: #84C7AE;
     border-radius: 15px;
-
-    width: 25.5rem;
-    height: 5.9rem;
 
     font-family: Karla;
     font-style: normal;
@@ -147,8 +118,9 @@ h1 {
     line-height: 2.9rem;
 
     color: #FFFFFF;
-    
-    margin-bottom: 1.1rem;
+
+    margin-top: 2.1rem;
+    padding: 1.5rem 10%;
 }
 
 span {
@@ -159,4 +131,7 @@ span {
     line-height: 1.8rem;
 
     color: #32403B;
+
+    margin-top: 1.1rem;
+    margin-bottom: 5.4rem;
 }
